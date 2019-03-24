@@ -1,0 +1,15 @@
+def main():
+#  File: Dice.py
+#  Description: Simulates roll of 2 dice and calculates the likelihood of rolling each numbers 2-12
+#  Student's Name: Johnathan Tran
+#  Student's UT EID: jht697
+#  Course Name: CS 313E 
+#  Unique Number: 51470
+#
+#  Date Created: 9/10/17
+#  Date Last Modified:
+
+    import random
+    random.seed(1314)
+
+

@@ -1,0 +1,37 @@
+class Node (object):
+
+   def __init__(self,initdata):
+      self.data = initdata
+      self.next = None
+
+   def getData (self):
+      return self.data            # returns a POINTER
+
+   def getNext (self):
+      return self.next            # returns a POINTER
+
+   def setData (self, newData):
+      self.data = newData         # changes a POINTER
+
+   def setNext (self,newNext):
+      self.next = newNext         # changes a POINTER
+
+
+class LinkedList():
+
+   def __init__(self):
+      self.head = None
+
+   def __str__ (self):
+     # Return a string representation of data suitable for printing.
+     #    Long lists (more than 10 elements long) should be neatly
+     #    printed with 10 elements to a line, two spaces between
+     #    elements
+
+     current = self.head.getNext()
+     s = ''
+     while current != None:
+        s += current
+        current = current.getNext()
+
+     return s
